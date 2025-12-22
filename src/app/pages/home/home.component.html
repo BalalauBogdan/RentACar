@@ -1,0 +1,87 @@
+<div class="home-container">
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">Find Your Perfect Ride</h1>
+      <p class="hero-subtitle">
+        Pick from our range of premium vehicles for your next adventure
+      </p>
+    </div>
+  </section>
+
+  <section class="featured-cars">
+    <div class="section-header">
+      <h2 class="section-title">Featured Vehicles</h2>
+    </div>
+
+    <div class="cars-grid">
+      <div *ngFor="let car of featuredCars" class="car-card">
+        <div class="car-image">
+          <img [src]="car.image" [alt]="car.name" />
+        </div>
+
+        <div class="car-content">
+          <h3 class="car-name">{{ car.name }}</h3>
+
+          <div class="car-specs">
+            <div class="spec">
+              <span class="spec-text">{{ car.seats }} Seats</span>
+            </div>
+            <div class="spec">
+              <span class="spec-text">{{ car.transmission }}</span>
+            </div>
+            <div class="spec">
+              <span class="spec-text">{{ car.fuel }}</span>
+            </div>
+          </div>
+
+          <div class="car-features">
+            <span *ngFor="let feature of car.features" class="feature-tag">
+              {{ feature }}
+            </span>
+          </div>
+
+          <div class="car-footer">
+            <div class="car-price">
+              <span class="price-amount">${{ car.price }}</span>
+              <span class="price-period">/day</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-choose-us">
+    <h2 class="section-title">Why Choose RentACar?</h2>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <h3>Wide Selection</h3>
+        <p>
+          Browse hundreds of vehicles and find one that fits both your style and
+          your budget
+        </p>
+      </div>
+      <div class="benefit-card">
+        <h3>Best Prices</h3>
+        <p>
+          We offer competitive rates and make sure there are no hidden fees or
+          unexpected charges
+        </p>
+      </div>
+      <div class="benefit-card">
+        <h3>Safe & Secure</h3>
+        <p>
+          We keep all our vehicles well-maintained and fully insured to ensure
+          your safety and peace of mind
+        </p>
+      </div>
+      <div class="benefit-card">
+        <h3>24/7 Support</h3>
+        <p>
+          We offer 24/7 customer service so you can feel confident and supported
+          at any time
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
