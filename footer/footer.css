@@ -51,3 +51,37 @@
   color: #555;
   user-select: none;
 }
+
+@media (max-width: 768px) {
+  .footer-bottom-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+    padding: 0 1.5rem;
+  }
+
+  .footer-bottom p,
+  .footer-bottom-links {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-bottom {
+    padding: 1.25rem 0;
+  }
+
+  .footer-bottom-container {
+    padding: 0 1rem;
+  }
+
+  .footer-bottom p,
+  .footer-bottom-links span,
+  .footer-bottom-links a {
+    font-size: 0.8rem;
+  }
+
+  .footer-bottom-links {
+    gap: 0.5rem;
+  }
+}

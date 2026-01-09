@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RentACar - Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="navbar/navbar.css" />
+    <link rel="stylesheet" href="home/home.css" />
+    <link rel="stylesheet" href="footer/footer.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-logo">
+          <a href="/" class="logo-link">
+            <span class="logo-text">RentACar</span>
+          </a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li>
+            <a href="/" data-path="/">Home</a>
+          </li>
+          <li>
+            <a href="/about.html" data-path="/about">About Us</a>
+          </li>
+          <li>
+            <a href="/contact.html" data-path="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="home-container">
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1 class="hero-title">Find Your Perfect Ride</h1>
+          <p class="hero-subtitle">
+            Pick from our range of premium vehicles for your next adventure
+          </p>
+        </div>
+      </section>
+
+      <section class="featured-cars">
+        <div class="section-header">
+          <h2 class="section-title">Featured Vehicles</h2>
+        </div>
+
+        <div id="carsGrid" class="cars-grid"></div>
+      </section>
+
+      <section class="why-choose-us">
+        <h2 class="section-title">Why Choose RentACar?</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <h3>Wide Selection</h3>
+            <p>
+              Browse hundreds of vehicles and find one that fits both your style
+              and your budget
+            </p>
+          </div>
+          <div class="benefit-card">
+            <h3>Best Prices</h3>
+            <p>
+              We offer competitive rates and make sure there are no hidden fees
+              or unexpected charges
+            </p>
+          </div>
+          <div class="benefit-card">
+            <h3>Safe & Secure</h3>
+            <p>
+              We keep all our vehicles well-maintained and fully insured to
+              ensure your safety and peace of mind
+            </p>
+          </div>
+          <div class="benefit-card">
+            <h3>24/7 Support</h3>
+            <p>
+              We offer 24/7 customer service so you can feel confident and
+              supported at any time
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-bottom">
+        <div class="footer-bottom-container">
+          <p>
+            &copy; <span id="currentYear"></span> RentACar. All rights reserved.
+          </p>
+          <div class="footer-bottom-links">
+            <span>Privacy Policy</span>
+            <span class="separator">|</span>
+            <span>Terms of Service</span>
+            <span class="separator">|</span>
+            <span>Cookie Policy</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="navbar/navbar.js"></script>
+    <script src="home/home.js"></script>
+    <script src="footer/footer.js"></script>
+  </body>
+</html>

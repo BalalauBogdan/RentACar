@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RentACar - About</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="navbar/navbar.css" />
+    <link rel="stylesheet" href="about/about.css" />
+    <link rel="stylesheet" href="footer/footer.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-logo">
+          <a href="/" class="logo-link">
+            <span class="logo-text">RentACar</span>
+          </a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li>
+            <a href="/" data-path="/">Home</a>
+          </li>
+          <li>
+            <a href="/about.html" data-path="/about">About Us</a>
+          </li>
+          <li>
+            <a href="/contact.html" data-path="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="about-container">
+      <section class="about-hero">
+        <div class="hero-content">
+          <h1 class="hero-title">About RentACar</h1>
+          <p class="hero-subtitle">
+            We've been your trusted choice for premium car rentals since 2010
+          </p>
+        </div>
+      </section>
+
+      <section class="story-section">
+        <div class="section-content">
+          <div class="story-text">
+            <h2 class="section-title">Our Story</h2>
+            <p class="story-paragraph">
+              RentACar was founded in 2010 with a clear goal: to make car rental
+              simple for everyone. We wanted to make renting a car easy,
+              affordable, and enjoyable. What began as a small operation with
+              just 10 vehicles has grown into one of the most trusted names in
+              car rentals today.
+            </p>
+            <p class="story-paragraph">
+              Today, we serve customers in more than 25 locations with a fleet
+              of over 500 vehicles. Our vehicles range from economy cars to
+              luxury SUVs. We have built our success on exceptional customer
+              service, transparent pricing, and a strong commitment to quality.
+              Our commitment to quality never changes.
+            </p>
+            <p class="story-paragraph">
+              We think driving should give you a sense of freedom and
+              possibility. Maybe you're planning a family road trip, or need a
+              reliable car for business travel, or want to enjoy the thrill of
+              driving a luxury car. We're here to help you do just that.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-bottom">
+        <div class="footer-bottom-container">
+          <p>
+            &copy; <span id="currentYear"></span> RentACar. All rights reserved.
+          </p>
+          <div class="footer-bottom-links">
+            <span>Privacy Policy</span>
+            <span class="separator">|</span>
+            <span>Terms of Service</span>
+            <span class="separator">|</span>
+            <span>Cookie Policy</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="navbar/navbar.js"></script>
+    <script src="about/about.js"></script>
+    <script src="footer/footer.js"></script>
+  </body>
+</html>
